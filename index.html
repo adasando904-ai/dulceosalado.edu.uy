@@ -1,183 +1,145 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dulce o Salado</title>
+  <title>¿Dulce o Salado?</title>
   <style>
     body {
-      font-family: 'Arial', sans-serif;
+      font-family: Arial, sans-serif;
+      background-color: #fff8f0;
       margin: 0;
       padding: 0;
-      background-color: #fff8f0;
       color: #333;
     }
     header {
-      background-color: #ff6f61;
+      background-color: #ff7043;
       color: white;
+      padding: 20px;
       text-align: center;
-      padding: 2rem 1rem;
+    }
+    header h1 {
+      margin: 0;
     }
     nav {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      background-color: #ffe3d6;
-      padding: 1rem;
-      flex-wrap: wrap;
+      text-align: center;
+      background: #ff9966;
+      padding: 10px;
     }
     nav a {
+      color: white;
       text-decoration: none;
-      color: #333;
+      margin: 0 10px;
       font-weight: bold;
     }
     section {
-      padding: 2rem;
+      padding: 20px;
       text-align: center;
-      border-bottom: 1px solid #ffd6c1;
     }
-    h2 {
-      color: #ff6f61;
-      margin-bottom: 1rem;
-    }
-    .item {
-      background-color: #fff0e6;
-      padding: 1rem;
-      margin: 1rem auto;
-      width: 80%;
+    .menu-item {
+      background: #fff;
       border-radius: 10px;
-      box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+      padding: 15px;
+      margin: 20px auto;
+      max-width: 400px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     }
-    .item img {
-      width: 250px;
-      height: auto;
+    .menu-item img {
+      max-width: 100%;
       border-radius: 10px;
-      margin-bottom: 1rem;
     }
-    .btn {
+    .price {
+      font-weight: bold;
+      color: #e65100;
+    }
+    footer {
+      background: #ff7043;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+    a.boton {
       display: inline-block;
-      margin-top: 1rem;
-      padding: 0.5rem 1rem;
-      background-color: #ff6f61;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background: #ff7043;
       color: white;
       text-decoration: none;
       border-radius: 5px;
       font-weight: bold;
     }
-    #ojitos { background-color: #ffe3f0; }
-    #scones { background-color: #fff7d6; }
-    #alfajores { background-color: #fff0f5; }
-    #jugos { background-color: #e0ffe6; }
-    #licuados { background-color: #ffe8cc; }
-    #enlace-correo { background-color: #d6f0ff; }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #ff6f61;
-      color: white;
-    }
-    .precio {
-      font-weight: bold;
-      color: #ff3b3b;
-      margin-top: 0.5rem;
-    }
-    .gluten-free {
-      font-weight: bold;
-      color: #2b7a2b;
-      margin-bottom: 0.5rem;
+    a.boton:hover {
+      background: #e64a19;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Dulce o Salado 🍓🥐</h1>
-    <p>Ojit@s, Scones, Alfajores, Jugos y Licuados sin gluten que te harán agua la boca</p>
-  </header>
 
-  <nav>
-    <a href="#ojitos">Ojit@s</a>
-    <a href="#scones">Scones</a>
-    <a href="#alfajores">Alfajores</a>
-    <a href="#jugos">Jugos</a>
-    <a href="#licuados">Licuados</a>
-    <a href="#enlace-correo">Acceso rápido</a>
-  </nav>
+<header>
+  <h1>¿Dulce o Salado?</h1>
+  <p>Delicias caseras hechas con amor</p>
+</header>
 
-  <section id="ojitos">
-    <h2>Ojit@s 👀</h2>
-    <div class="item">
-      <div class="gluten-free">Sin gluten ✅</div>
-      <img src="https://images.unsplash.com/photo-1615568625810-0b69de1dfc07?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Ojitos rellenos de mermelada">
-      <p>Deliciosos ojitos rellenos de mermelada artesanal de fresa, con una masa suave y doradita que se derrite en tu boca.</p>
-      <p class="precio">Precio: 160 pesos la docena</p>
-      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=adasando904@gmail.com&su=Pedido%20de%20Ojit@s&body=Hola,%20quiero%20pedir%20Ojit@s%20y%20la%20cantidad%20es:%20___" class="btn">Pedir ahora</a>
-    </div>
-  </section>
+<nav>
+  <a href="#ojitos">Ojitos</a>
+  <a href="#scones">Scones</a>
+  <a href="#alfajores">Alfajores</a>
+  <a href="#jugos">Jugos</a>
+  <a href="#licuados">Licuados</a>
+</nav>
 
-  <section id="scones">
-    <h2>Scones 🥐</h2>
-    <div class="item">
-      <div class="gluten-free">Sin gluten ✅</div>
-      <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Scones con queso">
-      <p>Scones recién horneados, crujientes por fuera y suaves por dentro, ¡ideales para acompañar tu té o café!</p>
-      <p class="precio">
-        10 scones → 150 pesos<br>
-        8 scones → 120 pesos
-      </p>
-      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=adasando904@gmail.com&su=Pedido%20de%20Scones&body=Hola,%20quiero%20pedir%20Scones%20y%20la%20cantidad%20es:%20___" class="btn">Pedir ahora</a>
-    </div>
-  </section>
+<!-- Ojitos -->
+<section id="ojitos" class="menu-item">
+  <h2>Ojitos</h2>
+  <img src="https://i.ibb.co/5MvjKpR/ojitos.jpg" alt="Ojitos caseros">
+  <p>Galletitas rellenas de mermelada, suaves y deliciosas.</p>
+  <p class="price">$160 la docena</p>
+  <a class="boton" href="mailto:adasando904@gmail.com?subject=Pedido%20Ojitos">Pedir Ahora</a>
+</section>
 
-  <section id="alfajores">
-    <h2>Alfajores de Maizena 🍪</h2>
-    <div class="item">
-      <div class="gluten-free">Sin gluten ✅</div>
-      <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Alfajores de Maizena">
-      <p>Alfajores de Maizena suaves y deliciosos, rellenos con dulce de leche, perfectos para acompañar tu café o té.</p>
-      <p class="precio">Precio: 355 pesos cada uno</p>
-      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=adasando904@gmail.com&su=Pedido%20de%20Alfajores%20de%20Maizena&body=Hola,%20quiero%20pedir%20Alfajores%20de%20Maizena%20y%20la%20cantidad%20es:%20___" class="btn">Pedir ahora</a>
-    </div>
-  </section>
+<!-- Scones -->
+<section id="scones" class="menu-item">
+  <h2>Scones</h2>
+  <img src="https://i.ibb.co/Yh5c90c/scones.jpg" alt="Scones caseros">
+  <p>Scones caseros esponjosos, perfectos para acompañar con té o café.</p>
+  <p class="price">$150 (8 scones) | $355 (10 scones)</p>
+  <a class="boton" href="mailto:adasando904@gmail.com?subject=Pedido%20Scones">Pedir Ahora</a>
+</section>
 
-  <section id="jugos">
-    <h2>Jugos 🥤</h2>
-    <div class="item">
-      <div class="gluten-free">Sin gluten ✅</div>
-      <img src="https://images.unsplash.com/photo-1612197529020-cc1d5a4e33f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Jugos naturales">
-      <p>Jugos frescos de frutas naturales, llenos de color y sabor.</p>
-      <p class="precio">
-        Pequeño → 60 pesos<br>
-        Mediano → 90 pesos<br>
-        Grande → 120 pesos
-      </p>
-      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=adasando904@gmail.com&su=Pedido%20de%20Jugos&body=Hola,%20quiero%20pedir%20Jugos%20y%20la%20cantidad%20es:%20___" class="btn">Pedir ahora</a>
-    </div>
-  </section>
+<!-- Alfajores de Maicena -->
+<section id="alfajores" class="menu-item">
+  <h2>Alfajores de Maicena (Sin gluten)</h2>
+  <img src="https://i.ibb.co/Zf3qLZs/alfajores.jpg" alt="Alfajores de maicena sin gluten">
+  <p>Suaves alfajores rellenos de dulce de leche, ¡se deshacen en la boca!</p>
+  <p class="price">$355 la docena</p>
+  <a class="boton" href="mailto:adasando904@gmail.com?subject=Pedido%20Alfajores%20Maicena">Pedir Ahora</a>
+</section>
 
-  <section id="licuados">
-    <h2>Licuados 🍌</h2>
-    <div class="item">
-      <div class="gluten-free">Sin gluten ✅</div>
-      <img src="https://images.unsplash.com/photo-1572448862526-99c9b7f77c77?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Licuados cremosos">
-      <p>Licuados cremosos con frutas frescas, batidos nutritivos y deliciosos, perfectos para un desayuno lleno de energía y sabor.</p>
-      <p class="precio">
-        1 fruta → 60 pesos<br>
-        2 frutas → 75 pesos<br>
-        3 frutas → 90 pesos
-      </p>
-      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=adasando904@gmail.com&su=Pedido%20de%20Licuados&body=Hola,%20quiero%20pedir%20Licuados%20y%20la%20cantidad%20es:%20___" class="btn">Pedir ahora</a>
-    </div>
-  </section>
+<!-- Jugos -->
+<section id="jugos" class="menu-item">
+  <h2>Jugos</h2>
+  <img src="https://i.ibb.co/t4zvL3w/jugos.jpg" alt="Jugos naturales">
+  <p>Jugos 100% naturales, frescos y llenos de sabor.</p>
+  <p class="price">Pequeño $60 | Mediano $90 | Grande $120</p>
+  <a class="boton" href="mailto:adasando904@gmail.com?subject=Pedido%20Jugo">Pedir Ahora</a>
+</section>
 
-  <section id="enlace-correo">
-    <h2>Acceso rápido</h2>
-    <p>Hacé clic aquí para ir directo a nuestra página desde cualquier dispositivo:</p>
-    <a href="https://bit.ly/dulceosalado" class="btn">Ir a Dulce o Salado</a>
-  </section>
+<!-- Licuados -->
+<section id="licuados" class="menu-item">
+  <h2>Licuados</h2>
+  <img src="https://i.ibb.co/cCC3jD5/licuados.jpg" alt="Licuados frutales">
+  <p>Refrescantes licuados frutales hechos al momento.</p>
+  <p class="price">1 fruta $60 | 2 frutas $75 | 3 frutas $90</p>
+  <a class="boton" href="mailto:adasando904@gmail.com?subject=Pedido%20Licuado">Pedir Ahora</a>
+</section>
 
-  <footer>
-    <p>© 2025 Dulce o Salado | ¡Sabor y alegría en cada bocado!</p>
-  </footer>
+<footer>
+  <p>&copy; 2025 ¿Dulce o Salado? - Montevideo, Uruguay</p>
+</footer>
+
 </body>
 </html>
+
+
+
